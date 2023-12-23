@@ -1,0 +1,5 @@
+#!/bin/bash
+
+input=$1
+hash_output=$(echo -n $input | sha256sum)
+echo $hash_output > hash_output.txt
